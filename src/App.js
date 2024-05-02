@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import NewProject from "./components/NewProject";
+import ProjectSidebar from "./components/ProjectsSidebar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="h-screen my-8 flex gap-8">
+      <ProjectSidebar />
+      <NewProject /> 
+    </main>
   );
 }
 
 export default App;
+
